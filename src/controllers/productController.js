@@ -1,4 +1,4 @@
-import service from "../services/productService.js";
+import * as service from "../services/productService.js";
 
 const handle = (fn) => async (req, res, next) => {
   try {

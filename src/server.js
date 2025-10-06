@@ -1,12 +1,15 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import productRoutes from "./routes/productRoutes.js";
 
 // Load environment variables
 dotenv.config();
 
 // Initialize express app
 const app = express();
+app.use(express.json());
+app.use("/products", productRoutes);
 
 // Start server
 const PORT = process.env.PORT || 3000;
