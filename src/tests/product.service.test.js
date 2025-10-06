@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { MongoMemoryServer } from "mongodb-memory-server";
-import Product from "../src/schema/productSchema.js";
-import service from "../src/services/productService.js";
+import Product from "../schema/productSchema.js";
+import * as service from "../services/productService.js";
 let mongod;
 
 beforeAll(async () => {
